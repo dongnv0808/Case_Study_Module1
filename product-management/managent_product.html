@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1 style="padding: 24px;">Quản lý sản phẩm</h1>
+    </div>
+    <div style="padding-left: 24px;" id="add-product-managent">
+        <input type="text" id="idproduct" placeholder="Mã sản phẩm">
+        <input type="text" id="image" placeholder="Image">
+        <input type="text" id="name" placeholder="Tên">
+        <select id="type">
+            <option value="mobile">mobile</option>
+            <option value="tablet">tablet</option>
+            <option value="laptop">laptop</option>
+        </select>
+        <select id="quantity">
+            <option value="1">1</option>
+        </select>
+        <input type="text" id="price" placeholder="Giá">
+        <input type="text" id="display" placeholder="Màn hình">
+        <input type="text" id="chip" placeholder="Chip">
+        <input type="text" id="ram" placeholder="Ram">
+        <input type="text" id="hdh" placeholder="Hệ điều hành">
+        <input type="text" id="pin" placeholder="Pin">
+        <button onclick="addProduct()">Thêm</button><br>
+    </div>
+        <div id="edit-show">
+        </div><br>
+        <button style="margin: 0 24px 24px 24px;" onclick="deleteAllProduct()">Delete All</button>
+    
+    <div id="managent-product-table">
+                <div>STT</div>
+                <div>Mã Sản Phảm</div>
+                <div>Ảnh</div>
+                <div>
+                    Tên
+                </div>
+                <div>Loại</div>
+                <div>Số lượng</div>
+                <div>
+                    Giá
+                    <i class="sort-descending ti-angle-down" onclick="sortDescending()"></i>
+                    <i class="sort-ascending ti-angle-up" onclick="sortAscending()"></i>
+                </div>
+                <div>Màn hình</div>
+                <div>Chip</div>
+                <div>Ram</div>
+                <div>Hệ điều hành</div>
+                <div>Pin</div>
+                <div></div>
+                <div></div>
+    </div>
+    <div id="managent-product-div">
+    </div>
+</body>
+<script src="./product-management/product.js"></script>
+<script src="./product-management/sort_product.js"></script>
+<script src="./product-management/delete_product.js"></script>
+<script src="./product-management/edit_product.js"></script>
+<script src="./product-management/add_product.js"></script>
+<script src="./product-management/show_product.js"></script>
+<script src="./product-management/main_managent.js">
+</script>
+
+</html>

@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    background-color: #ccc;
+    height: 100%;
+}
+
+
+#header {
+    background-color: rgb(0, 0, 0);
+    height: 58px;
+    position: relative;
+}
+
+#header-left {
+    display: inline-block;
+    position: absolute;
+}
+
+#header-left a {
+    font-size: 20px;
+    display: inline-block;
+    line-height: 58px;
+    padding: 0 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#header-left a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .header-right{
+    background-color: #000;
+    line-height: 58px;
+    float: right;
+    display: inline-block;
+}
+
+#header .header-right #input-search{
+    padding: 10px 40px 10px 6px;
+}
+
+.header-right .search-icon{
+    color: #fff;
+    padding: 18px 30px 23px;
+}
+
+.header-right .search-icon:hover {
+    padding: 18px 30px 23px;
+    cursor: pointer;
+}
+
+.header-right .shop-cart{
+    padding: 18px 30px 23px;
+    color: #fff;
+}
+
+.header-right .shop-cart:hover{
+    padding: 18px 30px 23px;
+    cursor: pointer;
+}
+
+/* Product */
+
+#product {
+    margin: 25px 160px;
+}
+
+#product .product-list{
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+#product .product-title{
+    text-align: left;
+    padding: 24px;
+}
+
+.content-item{
+    padding: 8px 0;
+}
+
+.name-item{
+    text-decoration: none;
+    font-size: 16px;
+}
+.price-item{
+    font-size: 18px;
+    color: red;
+}
+.btn-item{
+    padding: 16px 0;
+}
+.buy-btn{
+    text-decoration: none;
+    background-color: red;
+    padding: 4px 16px;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.add-cart{
+    text-decoration: none;
+    background-color: #ccc;
+    border-radius: 15px;
+    padding: 5px 18px;
+    border: none;
+    cursor: pointer;
+}
+
+#quantity-product{
+    margin: 24px;
+    position: relative;
+}
+
+#quantity-product .close{
+    float: right;
+}
+
+#cart-product {
+    margin: 30px 20px;
+}
+
+.content-cart-shop{
+    background-color: #fff;
+}
+
+#tab-cart-total{
+    width: 100%;
+    border-top: 2px solid;
+    text-align: right;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    align-items: center;
+    display: none;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container{
+    /* display: flex; */
+    /* align-items: center; */
+    width: 800px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.modal-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    align-items: center;
+    display: none;
+    justify-content: center;
+}
+
+.modal-detail.open {
+    display: flex;
+}
+
+#add-product-managent {
+    display: grid;
+    grid-auto-rows: minmax(min-content,max-content);
+    grid-template-columns: repeat(12 ,minmax(0,1fr));
+}
+
+#edit-show {
+    display: grid;
+    grid-auto-rows: minmax(min-content,max-content);
+    grid-template-columns: repeat(12 ,minmax(0,1fr));
+    margin-left: 24px;
+}
+
+#managent-product-table{
+    display: grid;
+    grid-auto-rows: minmax(min-content,max-content);
+    grid-template-columns: repeat(14 ,minmax(0,1fr));
+    margin-left: 24px;
+}
+
+#managent-product-table div {
+    border: 1px solid;
+}
+
+#managent-product-div{
+    display: grid;
+    grid-auto-rows: minmax(min-content,max-content);
+    grid-template-columns: repeat(14,minmax(0,1fr));
+    margin-left: 24px;
+}
+
+#managent-product-div div {
+    border: 1px solid;
+}
+
+#product-mobile-list-item{
+    display: grid;
+    grid-auto-rows: minmax(min-content,max-content);
+    grid-template-columns: repeat(5,minmax(0,1fr));
+}
+
+
+.show-all {
+    text-align: right; 
+    margin: 16px; 
+}
+
+.show-all-product {
+    text-decoration: none;
+    color: #000;
+}
+
+.show-all-product:hover {
+    color: #ccc;
+}
+
+#product-mobile-item-detail{
+    display:grid; 
+    grid-auto-rows: minmax(min-content,max-content); 
+    grid-template-columns: repeat(2 ,minmax(0,1fr));
+}
+
+.detail-product:hover {
+    cursor: pointer;
+    color: red;
+}
